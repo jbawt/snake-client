@@ -16,10 +16,10 @@ const connect = function() {
   conn.on('connect', () => {
     setInterval(() => {
       conn.write("Move: up");
-    }, 50);
+    }, 500);
   });
 
   return conn;
 };
 
-module.exports = connect;
+module.exports = { connect };
